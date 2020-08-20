@@ -10,7 +10,6 @@ const addLeftUntilSmall = (i) => {
   j = startJ = i - 1;
   if (j < 0) return 0;
   while (j >= 0 && histogram[j] >= histogram[i]) {
-    // retHeight = retHeight + ;
     j--;
   }
   retLength = startJ - j;
@@ -24,7 +23,6 @@ const addRightUntilSmall = (i) => {
   j = startJ = i + 1;
   if (j >= histogram.length) return 0;
   while (j < histogram.length && histogram[j] >= histogram[i]) {
-    // retHeight += histogram[i];
     j++;
   }
   retLength = j - startJ;
